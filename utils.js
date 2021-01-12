@@ -8,7 +8,7 @@ export function compareResults(guess, correctNumber) {
     } if (guess > correctNumber) {
         return 1;
     } if (isNaN(guess)) {
-        return 'NaN';
+        return NaN;
     }
 }
 

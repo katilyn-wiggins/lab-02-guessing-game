@@ -25,7 +25,6 @@ submitButton.addEventListener('click', () => {
     if (compareResults(userInput, secretNumber) === 0) {
         guessComment.textContent = 'you got it!';
         guessInput.disabled = true;
-
     }
     if (compareResults(userInput, secretNumber) === 1) {
         guessComment.textContent = 'too high!';
