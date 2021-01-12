@@ -20,10 +20,10 @@
     </header>
     <main>
         <section class="main-section">
-            <input type="number" id="num-guess">
+            <input id="num-guess" type="text"></input>
             <button id="submit-button">Submit Your Guess</button>
+            <div id="guess-comment"></div>
             <div>You have <span id="guesses-remaining"></span> guesses remaining!</div>
-            <span id="guess-comment"></span>
             <button id="reset">Restart Game</button>
 
         </section>
@@ -33,6 +33,7 @@
     </footer>
 
     <script type="module" src="app.js"></script>
+    <script type="module" src="utils.js"></script>
 </body>
 
 </html>
