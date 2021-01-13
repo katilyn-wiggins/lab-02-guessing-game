@@ -12,7 +12,3 @@ export function compareResults(guess, correctNumber) {
     }
 }
 
-
-export function increment() {
-
-}

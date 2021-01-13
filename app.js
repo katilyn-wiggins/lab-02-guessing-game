@@ -54,10 +54,3 @@ restartButton.addEventListener('click', () => {
     guessSpan.textContent = 4;
 
 });
-
-
-
-
-
-
-
