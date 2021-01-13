@@ -1,25 +1,26 @@
 
 body {
-    /* https://coolors.co/generate and click export -> scss to get the colors to copy and paste below*/
-    /* --color1: hsla(349, 69%, 76%, 1);
-    --color2: hsla(207, 67%, 44%, 1);
-    --color3: hsla(200, 61%, 56%, 1);
-    --color4: hsla(187, 41%, 94%, 1);
-    --color5: hsla(170, 28%, 95%, 1); */
-/* 
-    /* --color1: hsla(45, 86%, 83%, 1);
-    --color2: hsla(135, 65%, 98%, 1);
-    --color3: hsla(315, 37%, 86%, 1);
-    --color4: hsla(45, 73%, 98%, 1);
-    --color5: hsla(224, 40%, 79%, 1); */
+    /* CSS HEX */
+    --color1: #264653ff;
+    --color2: #2a9d8fff;
+    --color3: #e9c46aff;
+    --color4: #f4a261ff;
+    --color5: #e76f51ff;
+
+    /* CSS HSL */
+    --charcoal: hsla(197, 37%, 24%, 1);
+    --persian-green: hsla(173, 58%, 39%, 1);
+    --orange-yellow-crayola: hsla(43, 74%, 66%, 1);
+    --sandy-brown: hsla(27, 87%, 67%, 1);
+    --burnt-sienna: hsla(12, 76%, 61%, 1);
     
     --header-height: 80px;
     --shadow: 0px 10px 20px -12px rgba(0,0,0,0.45);
     --gutter: 30px;
     --footer-height: 25px;
     
-    font-family: 'Titillium Web', sans-serif;
     background-color: var(--color2);
+    font-family: 'Taviraj', serif;
 }
 
 main {
@@ -32,8 +33,9 @@ main {
 
 section {
     background-color: var(--color5);
-    width: 1000px;
+    width: 400px;
     max-width: 80%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,11 +45,12 @@ section {
     margin-top: var(--gutter);
     margin-bottom: var(--gutter);
     border: solid 2px var(--color1);
+    border-radius: 60px;
 }
 
 header {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     background-color: var(--color3);
     height: var(--header-height);
     box-shadow: var(--shadow);
@@ -60,15 +63,40 @@ footer {
     box-shadow: var(--shadow);
 }
 
+h1 {
+    display: flex;
+    text-align: center;
+    font-size: 3em;
+    font-weight: 800;
+    font-family: 'Work Sans', sans-serif;
+    margin-bottom: 20px;
+    /* animation: pulse 5s infinite ease-in-out; */
+}
+
+.top {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 800;
+    font-family: 'Work Sans', sans-serif;
+    margin-right: 20px;
+}
 
 h2 {
     font-size: 1.8rem;
     font-weight: bold;
 }
 
-.gutter-right {
-    margin-right: 20px;
+input { 
+    margin-bottom: 10px;
 }
+
+button { 
+    margin: 10px;
+    font-weight: bold;
+}
+
+
+
 
 .main-logo {
     animation: pulse 5s infinite ease-in-out;
@@ -116,4 +144,16 @@ footer {
         transform: rotate3d(10, 10, 10, 50deg) scale(1);
     }
 
+  }
+
+  h4 {
+      width: 60%;
+      text-align: center;
+      font-size: smaller;
+      margin-bottom: 10px;
+  }
+
+  span {
+      font-weight: bolder;
+      font-size: small;
   }
