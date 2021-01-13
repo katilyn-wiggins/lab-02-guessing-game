@@ -51,7 +51,7 @@ test('it should return -1 when provided 8 and 10', (expect) => {
 test('it should return an error when provided with invalid input', (expect) => {
     //Arrange
     // Set up your arguments and expectations
-    const expected = NaN;
+    const expected = isNaN;
 
     //Act 
     // Call the function you're testing and set the result to a const
